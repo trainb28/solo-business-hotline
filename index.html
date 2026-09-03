@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solo Business Hotline: An expert to ask. No hourly rate.</title>
+<meta name="description" content="An expert to ask, whenever something comes up. For consultants, coaches, creators, advisors and fractionals. Unlimited questions on sales, marketing, pricing and proposals, consultations when you need them, and a room full of other solos. $79/month.">
+<meta property="og:title" content="Solo Business Hotline">
+<meta property="og:description" content="An expert to ask, whenever something comes up. No hourly rates, no packages, no retainer. $79 a month for solo business owners.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#FBF3E2; --cream2:#FCF6E8; --green:#0A4B39; --pine:#073D2F;
+    --orange:#C75D3A; --orange-d:#A8492A; --sand:#E6A074;
+    --ink:#3E3128; --muted:#7A6C5C; --line:#E7D9C0;
+    --display:'Cinzel',Georgia,serif;
+    --body:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    --wrap:1080px; --r:14px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--cream);color:var(--ink);font-family:var(--body);font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--wrap);margin:0 auto;padding:0 26px}
+  .arrow{color:var(--orange);font-weight:700}
+
+  /* header */
+  .site-head{position:sticky;top:0;z-index:50;background:rgba(251,243,226,.92);backdrop-filter:saturate(140%) blur(10px);border-bottom:1px solid var(--line)}
+  .head-inner{display:flex;align-items:center;justify-content:space-between;height:66px;gap:20px}
+  .brand{font-family:var(--display);font-size:19px;color:var(--green);line-height:1.1}
+  .brand small{display:block;font-family:var(--body);font-weight:500;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-top:3px}
+  .nav{display:flex;align-items:center;gap:24px;font-size:15px;font-weight:500}
+  .nav a{color:var(--green)}
+  .nav a:hover{color:var(--orange)}
+  .pill{color:#fff!important;background:var(--orange);padding:9px 18px;border-radius:999px}
+  .pill:hover{background:var(--orange-d)}
+
+  /* buttons */
+  .btn{display:inline-block;padding:15px 28px;border-radius:11px;background:var(--orange);color:#fff;font-weight:600;font-size:16.5px;transition:background .18s,transform .18s}
+  .btn:hover{background:var(--orange-d);transform:translateY(-1px);color:#fff}
+  .btn-ghost{display:inline-block;padding:15px 26px;border:1.5px solid var(--green);border-radius:11px;color:var(--green);font-weight:600;font-size:16.5px}
+  .btn-ghost:hover{background:var(--green);color:var(--cream)}
+
+  /* hero */
+  .hero{padding:78px 0 58px;text-align:center}
+  .eyebrow{font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--orange);margin-bottom:18px}
+  .hero h1{font-family:var(--display);font-size:clamp(34px,5.4vw,58px);line-height:1.06;color:var(--pine);max-width:15em;margin:0 auto}
+  .hero h1 em{font-style:normal;color:var(--orange)}
+  .hero .sub{margin:24px auto 0;font-size:19.5px;max-width:34em;color:var(--ink)}
+  .cta-row{display:flex;gap:14px;margin-top:32px;justify-content:center;flex-wrap:wrap}
+  .micro{margin-top:16px;font-size:14.5px;color:var(--muted)}
+
+  /* problem strip */
+  .problem{background:var(--cream2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:44px 0}
+  .problem .lead{text-align:center;font-family:var(--display);font-size:clamp(21px,2.8vw,27px);color:var(--green);max-width:20em;margin:0 auto 26px;line-height:1.3}
+  .asks{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .ask{background:var(--cream);border:1px solid var(--line);border-radius:11px;padding:20px 20px}
+  .ask b{display:block;font-size:15px;color:var(--orange);font-weight:700;margin-bottom:7px}
+  .ask p{font-size:16px;color:var(--ink);line-height:1.45}
+
+  section{padding:74px 0}
+  .sec-eyebrow{font-size:12.5px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--orange);margin-bottom:15px}
+  h2{font-family:var(--display);font-size:clamp(28px,4vw,40px);line-height:1.12;color:var(--pine)}
+  .lede{margin-top:18px;font-size:18px;max-width:40em;color:var(--ink)}
+  .center{text-align:center}
+  .center .lede{margin-left:auto;margin-right:auto}
+
+  /* what you get */
+  .gets{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:46px}
+  .get{background:var(--cream2);border:1px solid var(--line);border-top:4px solid var(--green);border-radius:var(--r);padding:28px 25px}
+  .get:nth-child(2){border-top-color:var(--orange)}
+  .get:nth-child(3){border-top-color:var(--sand)}
+  .get .num{font-family:var(--display);font-size:13px;letter-spacing:.1em;color:var(--muted)}
+  .get h3{font-family:var(--display);font-size:23px;color:var(--green);margin-top:8px;line-height:1.15}
+  .get p{font-size:16px;color:var(--ink);margin-top:11px;line-height:1.5}
+  .get .tag{display:inline-block;margin-top:14px;font-size:12.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--orange);border:1px solid var(--line);border-radius:999px;padding:5px 12px}
+
+  /* how */
+  .how{background:var(--pine);color:#EFE7D7}
+  .how h2{color:#fff}
+  .how .sec-eyebrow{color:var(--sand)}
+  .how .lede{color:#C9C1B1}
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:44px}
+  .step{border-top:2px solid rgba(255,255,255,.2);padding-top:18px}
+  .step .n{font-family:var(--display);font-size:34px;color:var(--sand);line-height:1}
+  .step h3{font-size:19px;color:#fff;font-weight:600;margin-top:9px}
+  .step p{font-size:16px;color:#C9C1B1;margin-top:9px;line-height:1.5}
+
+  /* questions */
+  .qlist{display:grid;grid-template-columns:1fr 1fr;gap:12px 22px;margin-top:38px}
+  .q{background:var(--cream2);border:1px solid var(--line);border-left:3px solid var(--orange);border-radius:9px;padding:15px 18px;font-size:16.5px;line-height:1.45}
+  .qnote{margin-top:26px;font-size:16.5px;color:var(--muted);padding-left:20px;border-left:3px solid var(--line);max-width:46em}
+
+  /* not */
+  .not{background:var(--cream2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .nots{display:grid;grid-template-columns:1fr 1fr;gap:16px 34px;margin-top:36px}
+  .nots p{font-size:16.5px;line-height:1.5;padding-left:26px;position:relative}
+  .nots p:before{content:"\2715";position:absolute;left:0;top:1px;color:var(--orange);font-weight:700;font-size:14px}
+  .nots p.yes:before{content:"\2713";color:var(--green)}
+  .nots b{color:var(--green)}
+
+  /* who */
+  .who-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:start}
+  .who-grid p{margin-top:16px;font-size:17.5px}
+  .stand{font-family:var(--display);font-size:clamp(20px,2.5vw,26px);line-height:1.3;color:var(--green);padding-left:24px;border-left:4px solid var(--orange)}
+  .creds{margin-top:24px;display:flex;flex-wrap:wrap;gap:9px}
+  .creds span{font-size:13.5px;font-weight:600;color:var(--green);background:var(--cream2);border:1px solid var(--line);border-radius:999px;padding:7px 14px}
+
+  /* price */
+  .price-sec{background:var(--green);color:#fff;text-align:center}
+  .price-sec h2{color:#fff}
+  .price-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.2);border-radius:18px;padding:40px 34px;max-width:560px;margin:38px auto 0}
+  .price-big{font-family:var(--display);font-size:62px;color:#fff;line-height:1}
+  .price-big span{font-family:var(--body);font-size:17px;font-weight:500;color:#D8D0C0}
+  .price-list{list-style:none;margin:26px 0 0;text-align:left}
+  .price-list li{font-size:16.5px;color:#EAE2D2;padding:11px 0 11px 28px;border-bottom:1px dashed rgba(255,255,255,.18);position:relative}
+  .price-list li:last-child{border-bottom:0}
+  .price-list li:before{content:"\2713";position:absolute;left:0;color:var(--sand);font-weight:700}
+  .price-card .btn{margin-top:28px;width:100%;text-align:center}
+  .price-note{margin-top:16px;font-size:14.5px;color:#C9C1B1}
+
+  /* faq */
+  .faqs{margin-top:40px;display:grid;grid-template-columns:1fr 1fr;gap:26px 40px}
+  .faq h3{font-size:17.5px;font-weight:700;color:var(--green);line-height:1.35}
+  .faq p{font-size:16.5px;color:var(--ink);margin-top:8px;line-height:1.5}
+
+  /* final */
+  .final{background:var(--cream2);border-top:1px solid var(--line);text-align:center}
+  .final h2{max-width:16em;margin:0 auto}
+  .final p{margin:16px auto 0;max-width:32em;color:var(--muted);font-size:17.5px}
+
+  footer{padding:40px 0 34px;border-top:1px solid var(--line)}
+  .foot-inner{display:flex;justify-content:space-between;gap:22px;flex-wrap:wrap;align-items:flex-start}
+  .foot-brand{font-family:var(--display);color:var(--green);font-size:18px}
+  .foot-brand small{display:block;font-family:var(--body);font-size:13px;color:var(--muted);margin-top:5px}
+  .foot-nav{display:flex;gap:20px;font-size:15px;color:var(--muted);flex-wrap:wrap}
+  .foot-nav a:hover{color:var(--orange)}
+  .foot-legal{width:100%;margin-top:24px;padding-top:16px;border-top:1px solid var(--line);font-size:13px;color:var(--muted);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+
+  .reveal{opacity:0;transform:translateY(15px);transition:opacity .65s ease,transform .65s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  @media (max-width:900px){
+    .asks,.gets,.steps{grid-template-columns:1fr}
+    .qlist,.nots,.faqs,.who-grid{grid-template-columns:1fr;gap:16px}
+    .who-grid{gap:32px}
+  }
+  @media (max-width:620px){
+    body{font-size:17px}
+    .wrap{padding:0 20px}
+    .nav a:not(.pill){display:none}
+    .hero{padding:52px 0 44px}
+    section{padding:54px 0}
+    .cta-row{flex-direction:column}
+    .cta-row .btn,.cta-row .btn-ghost{width:100%;text-align:center}
+    .price-card{padding:30px 22px}
+    .price-big{font-size:50px}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *{transition:none!important;scroll-behavior:auto!important}
+    .reveal{opacity:1;transform:none}
+  }
+  :focus-visible{outline:3px solid var(--orange);outline-offset:2px;border-radius:4px}
+</style>
+</head>
+<body id="top">
+
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="brand" href="#top">Solo Business Hotline<small>Answers when you need them</small></a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#what">What you get</a>
+      <a href="#questions">Real questions</a>
+      <a href="#who">Who's behind it</a>
+      <a class="pill" href="JOIN_URL">Join, $79/mo</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">For consultants &middot; coaches &middot; creators &middot; advisors &middot; fractionals</p>
+      <h1>You used to have a whole company to ask. <em>Now it's just you.</em></h1>
+      <p class="sub">A sales team, a marketing department, a boss, the person two desks over who always knew. Gone. <b>This is an expert in your corner instead, for whenever something comes up.</b></p>
+      <div class="cta-row">
+        <a class="btn" href="JOIN_URL">Join the Hotline</a>
+        <a class="btn-ghost" href="#what">See what's included</a>
+      </div>
+      <p class="micro"><b>$79 a month.</b> About two-sixty a day. No hourly rates, no packages, no retainer, no minimum.</p>
+    </div>
+  </section>
+
+  <!-- PROBLEM -->
+  <section class="problem">
+    <div class="wrap">
+      <p class="lead">Running solo isn't hard because the work is hard. You're good at the work. It's hard because there's nobody to ask.</p>
+      <div class="asks">
+        <div class="ask">
+          <b>Tuesday, 9:40am</b>
+          <p>A prospect asks for a proposal. You've never written one with your own name at the top. Who reviews the draft?</p>
+        </div>
+        <div class="ask">
+          <b>Thursday, 4pm</b>
+          <p>You want to raise your rate and you have no idea if the number is crazy or embarrassingly low. Who tells you the truth?</p>
+        </div>
+        <div class="ask">
+          <b>Sunday night</b>
+          <p>Pipeline is thin, you have six ideas to fix it, and no idea which one to run. Who helps you pick?</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO IT'S FOR -->
+  <section style="padding:52px 0">
+    <div class="wrap center">
+      <p class="sec-eyebrow">Who it's for</p>
+      <h2>If you are the business, you're in the right place.</h2>
+      <p class="lede">Consultants. Coaches. Content creators. Advisors. Fractional executives. Freelancers and one-person shops of every kind. Different work, same problems, and almost none of the advice out there is written for you.</p>
+      <p class="lede" style="margin-top:14px">Solo businesses aren't small versions of big ones. You don't need a growth stack or a hiring plan. You need to price something correctly, get a proposal accepted, and keep the pipeline from going quiet in March.</p>
+      <p class="lede" style="margin-top:14px"><b>There is a lot of advice out there for startups and for companies with staff. Almost none of it is built for a business of one.</b> That's the only thing we do here.</p>
+    </div>
+  </section>
+
+  <!-- WHAT YOU GET -->
+  <section id="what">
+    <div class="wrap center">
+      <p class="sec-eyebrow">What you get</p>
+      <h2>An expert to ask. Plus a few hundred people who get it.</h2>
+      <p class="lede">Every question a solo business actually runs into, answered in one spot instead of five Facebook groups and a search bar. Use all of it, use one piece, or use none this month and sleep better knowing it's there.</p>
+    </div>
+    <div class="wrap">
+      <div class="gets">
+        <article class="get reveal">
+          <div class="num">01</div>
+          <h3>Ask an expert, anytime</h3>
+          <p>Post a question and get a real answer from me or one of our experts. Sales, marketing, pricing, proposals, positioning, offers, follow-up, the awkward client conversation. No limit and no credits to spend.</p>
+          <span class="tag">Unlimited &middot; No hourly rate</span>
+        </article>
+        <article class="get reveal">
+          <div class="num">02</div>
+          <h3>Get an expert on a call</h3>
+          <p>When it's too big for a thread, book a 30-minute consultation. One problem, one conversation, one clear next step. Book one when you actually need one. No package to buy, no hourly rate, no upsell at the end.</p>
+          <span class="tag">Included</span>
+        </article>
+        <article class="get reveal">
+          <div class="num">03</div>
+          <h3>Other solos who get it</h3>
+          <p>Monthly working sessions, peer groups by stage, and a few hundred people running businesses exactly your size. Nobody understands a solo business like another solo. Some of the best answers here never come from me at all.</p>
+          <span class="tag">The Collective</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW -->
+  <section class="how">
+    <div class="wrap">
+      <p class="sec-eyebrow">How it works</p>
+      <h2>The point isn't how often you ask. It's that you can.</h2>
+      <p class="lede">Nobody buys insurance planning to use it every week. You buy it so the bad Tuesday costs you an afternoon instead of a quarter. Same idea here, except instead of a lawyer it's somebody who has actually sold, priced and marketed a business the size of yours. Most months you may not need us at all. The month you do, it pays for the whole year.</p>
+      <div class="steps">
+        <div class="step">
+          <div class="n">1</div>
+          <h3>Something comes up</h3>
+          <p>A pricing question, a stuck deal, a proposal you're not sure about. The kind of thing you'd have walked down the hall to ask.</p>
+        </div>
+        <div class="step">
+          <div class="n">2</div>
+          <h3>You ask an expert</h3>
+          <p>Post it in the space, or grab a 30-minute slot if it needs a conversation. Usually answered same day.</p>
+        </div>
+        <div class="step">
+          <div class="n">3</div>
+          <h3>You get back to work</h3>
+          <p>With an actual answer instead of four hours of Googling and a decision you still don't feel good about.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUESTIONS -->
+  <section id="questions">
+    <div class="wrap">
+      <p class="sec-eyebrow">Real questions</p>
+      <h2>The kind of thing people actually ask.</h2>
+      <div class="qlist">
+        <div class="q">"What should I charge for this? I think I'm way under."</div>
+        <div class="q">"My proposal keeps getting ghosted. Is it the price or the proposal?"</div>
+        <div class="q">"I have 40 people on my list. What do I actually send them?"</div>
+        <div class="q">"How do I follow up without sounding desperate?"</div>
+        <div class="q">"How do I package this so it isn't just hourly work?"</div>
+        <div class="q">"One client is 70% of my revenue. How do I fix that without losing them?"</div>
+        <div class="q">"I got ghosted after a great call. What do I say now?"</div>
+        <div class="q">"Should I niche down or take whatever comes?"</div>
+      </div>
+      <p class="qnote">Sales, marketing, pricing, proposals, positioning, offers. The business side, not the craft. You already know how to do the work. Most of what stalls a solo business is a question somebody was too embarrassed to ask, so they guessed and lost three weeks.</p>
+    </div>
+  </section>
+
+  <!-- WHAT THIS ISN'T -->
+  <section class="not">
+    <div class="wrap">
+      <p class="sec-eyebrow">Straight talk</p>
+      <h2>What this is, and what it definitely isn't.</h2>
+      <div class="nots">
+        <p>It is <b>not</b> a course. There's no curriculum, no modules, and nothing to fall behind on.</p>
+        <p class="yes">It <b>is</b> answers to your specific situation, from people who've done it.</p>
+        <p>It is <b>not</b> a coaching program. Nobody is assigning you homework or checking in on your goals.</p>
+        <p class="yes">It <b>is</b> there the moment you need it and quiet when you don't.</p>
+        <p>It is <b>not</b> a mastermind with an application and a five figure price tag.</p>
+        <p class="yes">It <b>is</b> $79 a month, cancel whenever you want.</p>
+        <p>It is <b>not</b> a guaranteed system for getting rich. I don't trust people who sell those.</p>
+        <p class="yes">It <b>is</b> honest help, including when the honest answer is don't do that.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO -->
+  <section id="who">
+    <div class="wrap who-grid">
+      <div>
+        <p class="sec-eyebrow">Who's behind it</p>
+        <h2>Brett Trainor, plus experts who know what I don't.</h2>
+        <p>I spent 25 years in corporate sales and go-to-market before corporate quit on me at 45. Six years solo since, and I've made money fifteen different ways. Plenty of them were a bad use of my time, and I'll happily tell you which ones so you can skip them.</p>
+        <p>I'm not the expert on everything, which is why the hotline isn't just me. When a question is outside what I know, it goes to somebody whose actual job it is.</p>
+        <div class="creds">
+          <span>Fortune</span><span>Forbes</span><span>Harvard Business Review</span><span>Inc.</span><span>Fast Company</span>
+        </div>
+      </div>
+      <div>
+        <blockquote class="stand">I'll tell you what I've learned and what I'd do. I'm not going to hand you a playbook and pretend your business is the same as everybody else's.</blockquote>
+        <p style="margin-top:24px;color:var(--muted);font-size:16.5px">Host of Brett Trainor Unplugged, almost 350 episodes of conversations with people building things their own way.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICE -->
+  <section class="price-sec">
+    <div class="wrap">
+      <p class="sec-eyebrow" style="color:var(--sand)">Membership</p>
+      <h2>One price. No hourly rate. Ever.</h2>
+      <div class="price-card">
+        <div class="price-big">$79<span>/month</span></div>
+        <ul class="price-list">
+          <li>Unlimited questions on sales, marketing, pricing and proposals</li>
+          <li>30-minute expert consultations when you need one</li>
+          <li>Monthly working sessions and peer groups</li>
+          <li>Weekly member-led accountability</li>
+          <li>Local chapters and a few hundred other solo owners</li>
+          <li>Member rates on deeper work if you ever want more</li>
+          <li>Cancel anytime, no contract</li>
+        </ul>
+        <a class="btn" href="JOIN_URL">Join the Hotline</a>
+        <p class="price-note">Founding member price. This goes to $99 once we work the kinks out. Join now and you keep $79 for as long as you stay.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <div class="wrap">
+      <p class="sec-eyebrow">Questions about the questions</p>
+      <h2>Fair enough.</h2>
+      <div class="faqs">
+        <div class="faq">
+          <h3>What does "unlimited" actually mean?</h3>
+          <p>Ask as often as you want. No cap, no credits, no hourly billing. Five questions this week is fine. So is none for three months.</p>
+        </div>
+        <div class="faq">
+          <h3>How fast do I get an answer?</h3>
+          <p>Usually same day, almost always within 24 hours. Other members often get there before I do, which is frequently better anyway.</p>
+        </div>
+        <div class="faq">
+          <h3>How many consultations do I get?</h3>
+          <p>Book one when you genuinely need one. Most members use a couple a year. If somebody starts booking weekly we'll have a friendly conversation about it.</p>
+        </div>
+        <div class="faq">
+          <h3>I'm just getting started. Do I belong here?</h3>
+          <p>Yes. Members range from first client to well past six figures, and some still have a job while they build. Nobody here is going to make you feel behind.</p>
+        </div>
+        <div class="faq">
+          <h3>What if I barely use it?</h3>
+          <p>Then it was a couple bucks a day to know an expert was there, which is the point. Plenty of members go quiet for months and then use it hard for two weeks when something breaks. That's the design, not a failure to get your money's worth.</p>
+        </div>
+        <div class="faq">
+          <h3>Can I cancel?</h3>
+          <p>Any time, from your own account, no email required and no exit interview. I'd rather you leave easily than stay annoyed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MORE HELP -->
+  <section style="padding:56px 0" class="not">
+    <div class="wrap center">
+      <p class="sec-eyebrow">If you want more</p>
+      <h2>Some people need an expert once a quarter. Some need one every week.</h2>
+      <p class="lede">The Hotline is built for the first kind, and that's most of us. If you'd rather have ongoing help than the occasional answer, members get member rates on deeper work. Just ask inside and we'll sort out what actually fits.</p>
+    </div>
+  </section>
+
+  <!-- FINAL -->
+  <section class="final">
+    <div class="wrap">
+      <h2>Stop guessing at things an expert could answer in ten minutes.</h2>
+      <p>You've got the skills. What you lost was the org chart. This is the replacement.</p>
+      <div class="cta-row">
+        <a class="btn" href="JOIN_URL">Join the Hotline, $79/mo</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-inner">
+      <div class="foot-brand">Solo Business Hotline<small>Answers when you need them.</small></div>
+      <nav class="foot-nav" aria-label="Footer">
+        <a href="#what">What you get</a>
+        <a href="#questions">Real questions</a>
+        <a href="#who">Who's behind it</a>
+        <a href="https://bretttrainor.com">BrettTrainor.com</a>
+        <a href="mailto:BT@BrettTrainor.com">Contact</a>
+      </nav>
+    </div>
+    <div class="foot-legal">
+      <span>&copy; 2026 Solo Business Hotline. A Brett Trainor project.</span>
+      <a href="mailto:BT@BrettTrainor.com" style="color:var(--green);font-weight:600">BT@BrettTrainor.com</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+</script>
+</body>
+</html>
