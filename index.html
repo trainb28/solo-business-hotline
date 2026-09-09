@@ -8,6 +8,10 @@
 <meta property="og:title" content="Solo Business Hotline">
 <meta property="og:description" content="Unlimited calls with mentors who've already done it. Matched to what you're stuck on. $79 a month, no hourly rates.">
 <meta property="og:type" content="website">
+<meta property="og:image" content="https://solobusinesshotline.com/sbh-logo.png">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -28,7 +32,8 @@
 
   .site-head{position:sticky;top:0;z-index:50;background:rgba(251,243,226,.93);backdrop-filter:saturate(140%) blur(10px);border-bottom:1px solid var(--line)}
   .head-inner{display:flex;align-items:center;justify-content:space-between;height:66px;gap:20px}
-  .brand{font-family:var(--display);font-size:19px;color:var(--green);line-height:1.1}
+  .brand{display:flex;align-items:center;gap:11px;font-family:var(--display);font-size:19px;color:var(--green);line-height:1.1}
+  .brand img{width:38px;height:38px;display:block;flex-shrink:0}
   .brand small{display:block;font-family:var(--body);font-weight:500;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-top:3px}
   .nav{display:flex;align-items:center;gap:24px;font-size:15px;font-weight:500}
   .nav a{color:var(--green)}
@@ -123,7 +128,8 @@
 
   footer{padding:40px 0 34px;border-top:1px solid var(--line)}
   .foot-inner{display:flex;justify-content:space-between;gap:22px;flex-wrap:wrap;align-items:flex-start}
-  .foot-brand{font-family:var(--display);color:var(--green);font-size:18px}
+  .foot-brand{display:flex;align-items:center;gap:11px;font-family:var(--display);color:var(--green);font-size:18px}
+  .foot-brand img{width:34px;height:34px;display:block;flex-shrink:0}
   .foot-brand small{display:block;font-family:var(--body);font-size:13px;color:var(--muted);margin-top:5px}
   .foot-nav{display:flex;gap:20px;font-size:15px;color:var(--muted);flex-wrap:wrap}
   .foot-nav a:hover{color:var(--orange)}
@@ -163,7 +169,7 @@
 
 <header class="site-head">
   <div class="wrap head-inner">
-    <a class="brand" href="#top">Solo Business Hotline<small>Mentors who've done it</small></a>
+    <a class="brand" href="#top"><img src="sbh-badge.png" alt="Solo Business Hotline"><span>Solo Business Hotline<small>Mentors who've done it</small></span></a>
     <nav class="nav" aria-label="Primary">
       <a href="#how">How it works</a>
       <a href="#mentors">The mentors</a>
@@ -366,7 +372,7 @@
 <footer>
   <div class="wrap">
     <div class="foot-inner">
-      <div class="foot-brand">Solo Business Hotline<small>Mentors who've done it.</small></div>
+      <div class="foot-brand"><img src="sbh-badge.png" alt=""><span>Solo Business Hotline<small>Mentors who've done it.</small></span></div>
       <nav class="foot-nav" aria-label="Footer">
         <a href="#how">How it works</a>
         <a href="#mentors">The mentors</a>
