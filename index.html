@@ -131,6 +131,13 @@
   .price-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.2);border-radius:18px;padding:40px 34px;max-width:600px;margin:38px auto 0}
   .price-big{font-family:var(--display);font-size:62px;color:#fff;line-height:1}
   .price-big span{font-family:var(--body);font-size:17px;font-weight:500;color:#D8D0C0}
+  .plan-alt{margin-top:13px;font-size:14.5px;color:#C9C1B1;letter-spacing:.04em;text-transform:uppercase;font-weight:600}
+  .prepay{display:flex;gap:12px;margin-top:12px;justify-content:center;flex-wrap:wrap}
+  .pp{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.22);border-radius:11px;padding:13px 20px;min-width:152px}
+  .pp.hi{border-color:var(--sand);background:rgba(230,160,116,.15)}
+  .pp b{display:block;font-family:var(--display);font-size:25px;color:#fff;line-height:1}
+  .pp small{display:block;font-size:13px;color:#D8D0C0;margin-top:6px}
+  .pp em{display:block;font-style:normal;font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--sand);margin-top:7px}
   .price-list{list-style:none;margin:26px 0 0;text-align:left}
   .price-list li{font-size:16.5px;color:#EAE2D2;padding:11px 0 11px 28px;border-bottom:1px dashed rgba(255,255,255,.18);position:relative}
   .price-list li:last-child{border-bottom:0}
@@ -142,6 +149,8 @@
   .price-note{margin-top:16px;font-size:14.5px;color:#C9C1B1}
   .anchor-note{margin-top:20px;padding-top:18px;border-top:1px solid rgba(255,255,255,.18);font-size:16px;color:#EAE2D2}
   .anchor-note b{color:#fff}
+  .guarantee{margin-top:18px;padding:13px 17px;border:1px dashed rgba(230,160,116,.6);border-radius:10px;font-size:15px;color:#EAE2D2;line-height:1.45;text-align:left}
+  .guarantee b{color:var(--sand)}
 
   /* faq */
   .faqs{margin-top:40px;display:grid;grid-template-columns:1fr 1fr;gap:26px 40px}
@@ -221,7 +230,7 @@
         <a id="cta-hero" class="btn" href="https://trp-collective.circle.so/checkout/solo-business-hotline">Join the Hotline</a>
         <a class="btn-ghost" href="#how">See how it works</a>
       </div>
-      <p class="micro"><b>$79 a month.</b> No pitches, no upsells, no contract. A single consulting call runs $200 and up.</p>
+      <p class="micro"><b>$79 a month, or $500 a year.</b> No pitches, no upsells, no contract. A single consulting call runs $200 and up.</p>
     </div>
   </section>
 
@@ -415,6 +424,11 @@
       <h2>One price. No hourly rate. Ever.</h2>
       <div class="price-card">
         <div class="price-big">$79<span>/month</span></div>
+        <p class="plan-alt">or pay ahead and pay less</p>
+        <div class="prepay">
+          <div class="pp"><b>$179</b><small>a quarter, about $60/mo</small></div>
+          <div class="pp hi"><b>$500</b><small>a year, about $42/mo</small><em>Save $448</em></div>
+        </div>
         <ul class="price-list">
           <li class="hd">The Hotline</li>
           <li>Unlimited 30-minute calls with vetted mentors</li>
@@ -427,11 +441,12 @@
           <li class="hd">The promises</li>
           <li>No pitches or upsells on any call, ever</li>
           <li>Hire a mentor directly if you want. We don't take a cut.</li>
-          <li>Cancel anytime, no contract</li>
+          <li>No contract. Monthly cancels anytime.</li>
         </ul>
         <a id="cta-pricing" class="btn" href="https://trp-collective.circle.so/checkout/solo-business-hotline">Join the Hotline</a>
+        <p class="guarantee"><b>14 days to change your mind.</b> Take a call in your first two weeks. If it wasn't worth it, tell us inside 14 days and we'll refund the whole thing. Annual included. No forms, no exit interview.</p>
         <p class="anchor-note"><b>A single 30-minute consulting call normally costs $200 or more.</b> One good call here pays for three months, and the room comes with it.</p>
-        <p class="price-note">No pitches, no upsells, no contract. Cancel whenever you want.</p>
+        <p class="price-note">Monthly cancels anytime. Quarterly and annual are prepaid. You'll pick your plan at checkout.</p>
       </div>
     </div>
   </section>
@@ -442,6 +457,10 @@
       <p class="sec-eyebrow">Fair questions</p>
       <h2>Ask away.</h2>
       <div class="faqs">
+        <div class="faq">
+          <h3>What if it turns out not to be worth it?</h3>
+          <p>Take a call in your first two weeks. If it didn't earn its keep, tell us inside 14 days and we'll refund you in full, annual plan included. No forms and no exit interview. You should know inside one call whether this is for you.</p>
+        </div>
         <div class="faq">
           <h3>Is there a size you have to be?</h3>
           <p>No, in either direction. Members range from first client to seven figures, all with nobody on payroll. The line isn't revenue, it's shape: no team to manage, no investors, no exit you're building toward. If that's you, you're in the right place.</p>
@@ -484,8 +503,9 @@
       <h2>Stop losing weeks to things somebody already solved.</h2>
       <p>Thirty minutes with the right person beats three weeks of guessing, and you don't have to do the rest of it alone either. Come for the answers. Stay for the people who get it.</p>
       <div class="cta-row">
-        <a id="cta-final" class="btn" href="https://trp-collective.circle.so/checkout/solo-business-hotline">Join the Hotline, $79/mo</a>
+        <a id="cta-final" class="btn" href="https://trp-collective.circle.so/checkout/solo-business-hotline">Join the Hotline</a>
       </div>
+      <p class="micro">Take a call in your first two weeks. If it wasn't worth it, we'll refund you.</p>
     </div>
   </section>
 
